@@ -7,22 +7,16 @@ import uuid
 import sqlite3
 from logging.handlers import TimedRotatingFileHandler
 from langchain.chains import RetrievalQA
-from langchain.schema import HumanMessage
-from langchain.chains import LLMChain
-from langchain_community.vectorstores import FAISS
 #from langchain.vectorstores import FAISS
-#from langchain_community.chat_models import AzureChatOpenAI
-from langchain_openai import AzureChatOpenAI
+from langchain_community.vectorstores import FAISS
 #from langchain.chat_models import AzureChatOpenAI
-#from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_openai import AzureChatOpenAI
 from langchain_openai import AzureOpenAIEmbeddings
-#from langchain_openai import AzureOpenAIEmbeddings
-#from langchain_community.embeddings.azure_openai import AzureOpenAIEmbeddings
+#from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from azure.identity import AzureCliCredential
 from azure.keyvault.secrets import SecretClient
 from Insert_llmdata import data_base
-
 
 # Configure logging with a TimedRotatingFileHandler
 logging.basicConfig(
@@ -186,21 +180,20 @@ class caseClassifier:
         openai.api_key = os.getenv("OPENAI_API_KEY")
         openai.api_version = os.getenv('OPENAI_DEPLOYMENT_VERSION')
         llm = AzureChatOpenAI(deployment_name=self.OPENAI_DEPLOYMENT_NAME,
-                        model_name=self.OPENAI_MODEL_NAME,
-                        azure_endpoint=self.OPENAI_DEPLOYMENT_ENDPOINT,
-                        openai_api_version=self.OPENAI_DEPLOYMENT_VERSION,
-                        openai_api_key=self.OPENAI_API_KEY,
-                        openai_api_type="azure")
-
+                              model_name=self.OPENAI_MODEL_NAME,
+                              azure_endpoint=self.OPENAI_DEPLOYMENT_ENDPOINT,
+                              openai_api_version=self.OPENAI_DEPLOYMENT_VERSION,
+                              openai_api_key=self.OPENAI_API_KEY,
+                              openai_api_type="azure")
         return llm
     
     def qa_bot(self, prompt):
         embeddings = AzureOpenAIEmbeddings(deployment=self.OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME,
-                                      model = self.OPENAI_ADA_EMBEDDING_MODEL_NAME,
-                                      azure_endpoint= self.OPENAI_DEPLOYMENT_ENDPOINT,
-                                      openai_api_type = "azure",
-                                      chunk_size = 1,)
-                                      #model_kwargs = {'deployment_id': self.OPENAI_ADA_EMBEDDING_DEPLOYMENT_NAME},
+                                           model=self.OPENAI_ADA_EMBEDDING_MODEL_NAME,
+                                           azure_endpoint=self.OPENAI_DEPLOYMENT_ENDPOINT,
+                                           openai_api_type="azure",
+                                           chunk_size=1,)
+                                      
         db = FAISS.load_local(self.db_path, embeddings,allow_dangerous_deserialization=True)
         llm = self.load_llm()
         qa_chain = self.retrieval_qa_chain(llm, prompt, db)
@@ -383,14 +376,14 @@ def process_query(query):
     data_base(qa_result, query)
     return final_result
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    while True:
-        logging.info("Please enter incorrect address here or type 'q' to quit")
-        query = input('you: ')
-        if query == 'q':
-            break
-        elif query.strip() == "":
-            continue
-        qa_result = process_query(query)
-        print("qa_result:", qa_result)
+#     while True:
+#         logging.info("Please enter incorrect address here or type 'q' to quit")
+#         query = input('you: ')
+#         if query == 'q':
+#             break
+#         elif query.strip() == "":
+#             continue
+#         qa_result = process_query(query)
+#         print("qa_result:", qa_result)

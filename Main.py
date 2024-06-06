@@ -4,6 +4,7 @@ from logging.handlers import TimedRotatingFileHandler
 from langchain.chat_models import AzureChatOpenAI
 import json
 import yaml
+#from langchain_openai import AzureChatOpenAI
 from firm_case_classifier_api_v8 import process_query
 #from azure.identity import DefaultAzureCredential
 from azure.identity import AzureCliCredential
@@ -63,7 +64,7 @@ class caseClassifier:
             openai_api_version=self.OPENAI_DEPLOYMENT_VERSION,
             openai_api_key=self.OPENAI_API_KEY,
             openai_api_type="azure"
-        )
+            )
         return llm
     
     def get_predictions(self, prompt_hf):

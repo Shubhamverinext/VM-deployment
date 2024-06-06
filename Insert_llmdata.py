@@ -63,18 +63,22 @@ def data_base(data, query):
             print("HandlingFirmId corresponding to", Handling_Firm, ":", handling_firm_id)
         except Exception as error:
             print(error)
-            
-        curr.execute("INSERT INTO Cases (CaseId, Date, CaseDescription, PrimaryCaseTypeId, SecondaryCaseTypeId, CaseRatingId, CaseStateId, HandlingFirmId, Confidence, Explanation) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                    (client_ID, current_date, case_description, primary_case_type_id, secondary_case_type_id, case_rating_id, case_state_id, handling_firm_id, confidence, explanation))  # Assuming the PrimaryCaseTypeId, SecondaryCaseTypeId, CaseRatingId, CaseStateId, HandlingFirmId are 1 for simplicity
+        try:
+            curr.execute("INSERT INTO Cases (CaseId, Date, CaseDescription, PrimaryCaseTypeId, SecondaryCaseTypeId, CaseRatingId, CaseStateId, HandlingFirmId, Confidence, Explanation) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                         (client_ID, current_date, case_description, primary_case_type_id, secondary_case_type_id, case_rating_id, case_state_id, handling_firm_id, confidence, explanation))
+        except Exception as error:
+            print(error)
 
-        # Fetch and print data from the table
-        curr.execute("SELECT * FROM Cases")
-        print("Table Data:")
-        rows = curr.fetchall()
-        for row in rows:
-            print(row, end="\n\n")
-
-        curr.close()
+        try:
+            # Fetch and print data from the table
+            curr.execute("SELECT * FROM Cases")
+            print("Table Data:")
+            rows = curr.fetchall()
+            for row in rows:
+                print(row, end="\n\n")
+        except Exception as error:
+            print(error)
+                
         # Commit changes and close connection
         conn.commit()
         conn.close()
