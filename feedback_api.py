@@ -36,9 +36,12 @@ app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 # Secret key and algorithm for JWT token
-SECRET_KEY = client.get_secret("pl-secretkey-jwt").value
-ALGORITHM = client.get_secret("pl-algorithm-jwt").value
-ACCESS_TOKEN_EXPIRE_MINUTES = client.get_secret("pl-accesstoken-exp-min").value
+#SECRET_KEY = client.get_secret("pl-secretkey-jwt").value
+#ALGORITHM = client.get_secret("pl-algorithm-jwt").value
+#ACCESS_TOKEN_EXPIRE_MINUTES = client.get_secret("pl-accesstoken-exp-min").value
+SECRET_KEY = "83daa0256a2289b0fb23693bf1f6034d44396675749244721a2b20e896e11662"
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 100
 
 #database for storing user information
 db = {
@@ -142,7 +145,11 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
 async def receive_json(json_data: dict, current_user: dict = Depends(get_current_user)):
     try:
         generated_uuid = uuid.uuid4()
+        print("generated_uuid_",generated_uuid)
+        print("RESIVED JSON DATA",type(json_data))
+        #json_data_db = json_data.dict()
         feedback_table(json_data, generated_uuid)
+        print(".......................database")
         with open('log_file.json', 'a') as file:
             file.write(json.dumps(json_data) + '\n')
         return {"message": "JSON data received and saved to log file."}
