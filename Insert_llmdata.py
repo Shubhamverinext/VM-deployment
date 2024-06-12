@@ -17,14 +17,13 @@ def data_base(data, query):
         PrimaryCaseType = data["PrimaryCaseType"]
         SecondaryCaseType = data["SecondaryCaseType"]
         CaseRating = data["CaseRating"]
-        #Case_State = data["Case State"].split()[-1]
         Handling_Firm = data["Handling Firm"]
         try:
             #fetch and map ID from PrimaryCaseTypes
             curr.execute("SELECT PrimaryCaseTypeId FROM PrimaryCaseTypes WHERE CaseType = ?", (PrimaryCaseType,))
             result = curr.fetchone()
             primary_case_type_id = result[0]
-            print("PrimaryCaseTypeId corresponding to", PrimaryCaseType, ":", primary_case_type_id)
+            #print("PrimaryCaseTypeId corresponding to", PrimaryCaseType, ":", primary_case_type_id)
         except Exception as error:
             print(error)
         try:
@@ -33,7 +32,7 @@ def data_base(data, query):
             curr.execute("SELECT ScondaryCaseTypeId FROM SecondaryCaseTypes WHERE CaseType = ?", (SecondaryCaseType,))
             result = curr.fetchone()
             secondary_case_type_id = result[0]
-            print("SecondaryCaseTypeId corresponding to", SecondaryCaseType, ":", secondary_case_type_id)
+            #print("SecondaryCaseTypeId corresponding to", SecondaryCaseType, ":", secondary_case_type_id)
         except Exception as error:
             print(error)
         
@@ -42,7 +41,7 @@ def data_base(data, query):
             curr.execute("SELECT CaseRatingId FROM Caserating WHERE CastRating = ?", (CaseRating,))
             result = curr.fetchone()
             case_rating_id = result[0]
-            print("CaseRatingId corresponding to", CaseRating, ":", case_rating_id)
+            #print("CaseRatingId corresponding to", CaseRating, ":", case_rating_id)
         except Exception as error:
             print(error)
 
@@ -51,7 +50,7 @@ def data_base(data, query):
             curr.execute("SELECT CaseStateId FROM CaseStates WHERE Name = ?", (Case_State,))
             result = curr.fetchone()
             case_state_id = result[0]
-            print("CaseStateId corresponding to", Case_State, ":", case_state_id)
+            #print("CaseStateId corresponding to", Case_State, ":", case_state_id)
         except Exception as error:
             print(error)
         
@@ -60,7 +59,7 @@ def data_base(data, query):
             curr.execute("SELECT HandlingFirmId FROM HandlingFirms WHERE Name = ?", (Handling_Firm,))
             result = curr.fetchone()
             handling_firm_id = result[0]
-            print("HandlingFirmId corresponding to", Handling_Firm, ":", handling_firm_id)
+            #print("HandlingFirmId corresponding to", Handling_Firm, ":", handling_firm_id)
         except Exception as error:
             print(error)
         try:
@@ -69,15 +68,15 @@ def data_base(data, query):
         except Exception as error:
             print(error)
 
-        try:
-            # Fetch and print data from the table
-            curr.execute("SELECT * FROM Cases")
-            print("Table Data:")
-            rows = curr.fetchall()
-            for row in rows:
-                print(row, end="\n\n")
-        except Exception as error:
-            print(error)
+        # try:
+        #     # Fetch and print data from the table
+        #     curr.execute("SELECT * FROM Cases")
+        #     print("Table Data:")
+        #     rows = curr.fetchall()
+        #     for row in rows:
+        #         print(row, end="\n\n")
+        # except Exception as error:
+        #     print(error)
                 
         # Commit changes and close connection
         conn.commit()

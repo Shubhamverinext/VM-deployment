@@ -1,14 +1,16 @@
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
-from langchain.chat_models import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI
 import json
 import yaml
+import openai
 #from langchain_openai import AzureChatOpenAI
 from firm_case_classifier_api_v8 import process_query
-#from azure.identity import DefaultAzureCredential
 from azure.identity import AzureCliCredential
 from azure.keyvault.secrets import SecretClient
+
+
 # Configure logging with a TimedRotatingFileHandler
 logging.basicConfig(
     level=logging.INFO,
@@ -57,14 +59,15 @@ class caseClassifier:
         """
 
     def load_llm(self):
-        llm = AzureChatOpenAI(
-            deployment_name=self.OPENAI_DEPLOYMENT_NAME,
-            model_name=self.OPENAI_MODEL_NAME,
-            openai_api_base=self.OPENAI_DEPLOYMENT_ENDPOINT,
-            openai_api_version=self.OPENAI_DEPLOYMENT_VERSION,
-            openai_api_key=self.OPENAI_API_KEY,
-            openai_api_type="azure"
-            )
+        openai.api_type = "azure"
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        openai.api_version = os.getenv('OPENAI_DEPLOYMENT_VERSION')
+        llm = AzureChatOpenAI(deployment_name=self.OPENAI_DEPLOYMENT_NAME,
+                              model_name=self.OPENAI_MODEL_NAME,
+                              azure_endpoint=self.OPENAI_DEPLOYMENT_ENDPOINT,
+                              openai_api_version=self.OPENAI_DEPLOYMENT_VERSION,
+                              openai_api_key=self.OPENAI_API_KEY,
+                              openai_api_type="azure")
         return llm
     
     def get_predictions(self, prompt_hf):
@@ -138,16 +141,16 @@ class caseClassifierApp:
         result = self.case_classifier.analyze_case(msg)
         return result
     
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    while True:
-        query = input('you: ')
-        if query == 'q':
-            break
-        elif query.strip() == "":
-            continue
-        #response = app.send(query)
-        response = flag_check(query)
-        logging.info('Final result generated: %s', response)
-        print("response", response)
+#     while True:
+#         query = input('you: ')
+#         if query == 'q':
+#             break
+#         elif query.strip() == "":
+#             continue
+#         #response = app.send(query)
+#         response = flag_check(query)
+#         logging.info('Final result generated: %s', response)
+#         print("response", response)
         
