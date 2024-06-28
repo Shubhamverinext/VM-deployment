@@ -17,6 +17,7 @@ from langchain.prompts import PromptTemplate
 from azure.identity import AzureCliCredential
 from azure.keyvault.secrets import SecretClient
 from Insert_llmdata import data_base
+from fetch_rulefile_db import fetch_data_by_casestate
 
 # Configure logging with a TimedRotatingFileHandler
 logging.basicConfig(
@@ -63,8 +64,8 @@ class caseClassifier:
 
         self.custom_prompt_template = """
         {context}
-        Given the descriptions and matching case types (Primary and Secondary), case ratings, case state and Handling Firm in context.
-        Which type of case do you think that the following description "{question}" indicates and what would be the case rating and case state?
+        Given the third-party descriptions and matching case types (Primary and Secondary), case ratings, case state and Handling Firm in context.
+        Which type of case do you think that the following third-party description  "{question}" indicates and what would be the case rating and case state?
         if you think it indicated more than one case type than provide list of all case type you think is applicable.
         Instruction: In description CL stands for client.Examine the description considering CL as client for answers.
         Select Primary Case Type and Secondary Case Type strictly from below list only, do not make up any other case type:
@@ -156,7 +157,7 @@ class caseClassifier:
 
         self.hf_prompt_template = """
         Given all the details about case in {case_state}, where the case rating is {case_ratings} and case types are {Primary} and {Secondary},
-        determine the most suitable handling firm based on the Handling Firm Rules for the given description: "{question}" ?
+        determine the most suitable handling firm based on the Handling Firm Rules for the given third party description: "{question}" ?
 
         Assign handling firm strictly according to the Handling Firm Rules provided. Do not create or suggest any other handling firms outside of these rules.
 
@@ -260,13 +261,13 @@ class caseClassifier:
         Raises:
             IOError: If there is an issue reading the firm rules file.
         """
+
         # Extract case details from the QA result
         primary_case_type = qa_result.get("PrimaryCaseType")
         secondary_case_type = qa_result.get("SecondaryCaseType")
         case_ratings = qa_result.get("CaseRating")
         case_state = qa_result.get("Case State")
-        # Prepare the path to the firm rules JSON file
-        path = "firm_rules.json"
+
         try:
             # Extract the state abbreviation from the case state
             if " " in case_state:
@@ -277,20 +278,25 @@ class caseClassifier:
                     case_state = state_parts[1]
             else:
                 case_state = case_state
-
-            # Load firm rules from JSON file
-            with open(path, 'r') as f:
-                data = json.load(f)
             
-            # Check if rules exist for the given state
-            if case_state in data["rules"]:
-                # Retrieve rules for the given state
-                state_rules = data["rules"][case_state]
-               
-                # Generate the handling firm prompt template based on rules
-                try:
-                    for rule in state_rules:
-                        self.hf_prompt_template += f"  - If the case rating is '{rule['condition']['case_rating']}' and case type is '{rule['condition']['case_type']}', {rule['action']}\n"               
+            conn = sqlite3.connect('Cases.db')
+            curr = conn.cursor()
+
+            try:
+                # fetch and map ID from CaseStates
+                curr.execute("SELECT CaseStateId FROM CaseStates WHERE Name = ?", (case_state,))
+                result = curr.fetchone()
+                case_state_id = result[0]
+                if result is not None:
+                    case_state_id = result[0]
+                    curr.execute("SELECT Rules FROM Case_rules WHERE CaseStateId = ?", (case_state_id,))
+                    result = curr.fetchone()
+                    rule_state = result[0]
+                    data = json.loads(rule_state)
+                    print("data_base rule entry",data)
+                    for rule in data["rules"]:
+                        self.hf_prompt_template += f"  - If the case rating is '{rule['condition']['case_rating']}' and case type is '{rule['condition']['case_type']}', {rule['action']}\n"
+
                     # Format the handling firm prompt with case details
                     hf_prompt = self.hf_prompt_template.format(
                         case_state=case_state,
@@ -300,25 +306,28 @@ class caseClassifier:
                         question=query
                     )
                     # Get the handling firm recommendation
-                    hf_result = self.hf_bot(hf_prompt)
-                except IOError as e:
-                    # Log an error if there is an issue creating handling firm rules prompt
-                    logging.error('An error occurred creating handling firm rules prompt: %s', e)
+                    hf_result = self.hf_bot(hf_prompt)    
+                    #print(hf_prompt_template)
+                    return hf_result
+                else:
+                    qa_result["Case State"] = "Unknown"
                     hf_result = '''
                     {
                         "Handling Firm" : "SAD"
                     }
                     '''
-                    #return hf_result
-            else:
-                # Set case state to unknown if rules are not found
-                qa_result["Case State"] = "Unknown"
+                    return hf_result
+                               
+            except IOError as e:
+                # Log an error if there is an issue creating handling firm rules prompt
+                logging.error('An error occurred creating handling firm rules prompt: %s', e)
                 hf_result = '''
                 {
                     "Handling Firm" : "SAD"
                 }
                 '''
-            return hf_result
+                return hf_result            
+
         except IOError as e:
             # Log an error if there is an issue reading the firm rules file
             logging.error('An error occurred while reading firm rules file: %s', e)
@@ -328,7 +337,8 @@ class caseClassifier:
             }
             '''
             return hf_result
-       
+
+
 class caseClassifierApp:
     def __init__(self, case_classifier):
         self.case_classifier = case_classifier
@@ -386,13 +396,13 @@ def process_query(query):
     data_base(qa_result, query)
     return final_result
 
-# if __name__ == "__main__":
-#     while True:
-#         logging.info("Please enter incorrect address here or type 'q' to quit")
-#         query = input('you: ')
-#         if query == 'q':
-#             break
-#         elif query.strip() == "":
-#             continue
-#         qa_result = process_query(query)
-#         print("qa_result:", qa_result)
+if __name__ == "__main__":
+    while True:
+        logging.info("Please enter incorrect address here or type 'q' to quit")
+        query = input('you: ')
+        if query == 'q':
+            break
+        elif query.strip() == "":
+            continue
+        qa_result = process_query(query)
+        print("qa_result:", qa_result)

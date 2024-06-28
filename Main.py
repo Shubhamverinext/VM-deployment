@@ -141,16 +141,16 @@ class caseClassifierApp:
         result = self.case_classifier.analyze_case(msg)
         return result
     
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     while True:
-#         query = input('you: ')
-#         if query == 'q':
-#             break
-#         elif query.strip() == "":
-#             continue
-#         #response = app.send(query)
-#         response = flag_check(query)
-#         logging.info('Final result generated: %s', response)
-#         print("response", response)
+    while True:
+        query = input('you: ')
+        if query == 'q':
+            break
+        elif query.strip() == "":
+            continue
+        #response = app.send(query)
+        response = flag_check(query)
+        logging.info('Final result generated: %s', response)
+        print("response", response)
         

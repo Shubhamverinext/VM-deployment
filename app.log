@@ -1,1130 +1,253 @@
-2024-06-11 00:32:36,305 - INFO - User login successful for username: admin
-2024-06-11 00:32:36,306 - INFO - Access token generated for username: admin
-2024-06-11 00:32:36,493 - INFO - Received message: Client name: Osa Esene
-DOB: 8/20/1980
-esene.osadonor@gmail.com
-
-Injury/loss: retaliation & potential wrongful termination
-DOI:  5/09/2024
-Location of incident: Portland, OR 97214
-Employer/Company: Central Catholic High School
-
-
-5/17/2024
-
-Liability: Mr. Esene is a student-teacher
-
-I need help with a work issue This school year I was a student-teacher and I was released out of my contract immediately after I finish the school year and was reported to HR for being in a classroom with three female students. The students and I were in the room for no longer than five minutes and a teacher walk by and felt like it wasn’t a good look. They gave me paperwork I sign by 06/21 or they really will terminate me.
-Nothing happened in the classroom and nothing was going to happen
-2024-06-11 00:32:37,317 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:32:37,317 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
+2024-06-28 15:00:14,771 - INFO - Please enter incorrect address here or type 'q' to quit
+2024-06-28 15:00:40,280 - INFO - Initializing caseClassifier...
+2024-06-28 15:00:40,295 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-db-path/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '19e13834-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '158c0a33-3531-11ef-9e2b-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
+No body was attached to the request
+2024-06-28 15:00:41,447 - INFO - Response status: 401
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '97'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'WWW-Authenticate': 'Bearer authorization="https://login.microsoftonline.com/e2fc2501-6769-4e5b-ba7b-c1f3e01ca3dc", resource="https://vault.azure.net"'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '158c0a33-3531-11ef-9e2b-a029196791c6'
+    'x-ms-request-id': '8d855da8-7a0c-4eb5-94ea-7dc2dcc238bb'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Date': 'Fri, 28 Jun 2024 09:30:40 GMT'
+2024-06-28 15:00:45,522 - INFO - AzureCliCredential.get_token succeeded
+2024-06-28 15:00:45,522 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-db-path/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '158c0a33-3531-11ef-9e2b-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:37,604 - INFO - Response status: 200
+2024-06-28 15:00:46,071 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '19e13834-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'b29f1dcb-de44-44b3-82f6-bdaa588853ef'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '158c0a33-3531-11ef-9e2b-a029196791c6'
+    'x-ms-request-id': 'e804e3e5-5263-4768-bf35-2fcbf5acc522'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:37 GMT'
-    'Content-Length': '292'
-2024-06-11 00:32:37,605 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '19e13835-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:32:37,626 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '19e13835-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '35682129-d33b-484e-8221-9f69c575bf3c'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:37 GMT'
-    'Content-Length': '291'
-2024-06-11 00:32:37,627 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '19e13836-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:32:37,646 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '19e13836-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '6e7c04b6-a600-415f-b015-bb6c7c0962ab'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:37 GMT'
-    'Content-Length': '313'
-2024-06-11 00:32:37,646 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '19e13837-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:32:37,666 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '19e13837-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '4da3bcae-9c6f-4fab-840c-ebf8f5862fcf'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:37 GMT'
-    'Content-Length': '276'
-2024-06-11 00:32:37,667 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '19e13838-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:32:37,686 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '19e13838-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '0b20e73c-4538-4e88-a74f-cb6da8f5d1c5'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:37 GMT'
-    'Content-Length': '272'
-2024-06-11 00:32:38,824 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com/openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:32:38,824 - INFO - This appears to be a legal case.
-2024-06-11 00:32:38,824 - INFO - Initializing caseClassifier...
-2024-06-11 00:32:39,162 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:32:39,162 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-db-path/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508ae-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:32:39,272 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508ae-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '7bbd5c8f-d877-4869-8e84-f7fabd9dad11'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:45 GMT'
     'Content-Length': '279'
-2024-06-11 00:32:39,273 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-azure-api-type/?api-version=REDACTED'
+2024-06-28 15:00:46,073 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-azure-api-type/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508af-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '18fde591-3531-11ef-bc64-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,295 - INFO - Response status: 200
+2024-06-28 15:00:46,331 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508af-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '9c0fa998-62fd-4293-a6f2-67aa78f00558'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '18fde591-3531-11ef-bc64-a029196791c6'
+    'x-ms-request-id': '99f8579c-4965-42c5-ae3b-06e63658aad8'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:45 GMT'
     'Content-Length': '267'
-2024-06-11 00:32:39,296 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
+2024-06-28 15:00:46,333 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b0-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '192595a7-3531-11ef-be2f-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,318 - INFO - Response status: 200
+2024-06-28 15:00:46,595 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b0-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'bae6dc94-0cb9-4220-a564-58d1b252a3a3'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '192595a7-3531-11ef-be2f-a029196791c6'
+    'x-ms-request-id': '296815bb-6d53-4793-849a-9c02e30b86b5'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:45 GMT'
     'Content-Length': '292'
-2024-06-11 00:32:39,319 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
+2024-06-28 15:00:46,596 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b1-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '194db81b-3531-11ef-9fea-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,341 - INFO - Response status: 200
+2024-06-28 15:00:47,529 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b1-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '7e0bc75c-c6c4-4f55-9d92-26518c17c022'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '194db81b-3531-11ef-9fea-a029196791c6'
+    'x-ms-request-id': '703e59a6-f6c4-4640-a125-0a48d7a40c24'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:46 GMT'
     'Content-Length': '291'
-2024-06-11 00:32:39,342 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
+2024-06-28 15:00:47,530 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b2-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '19dc1a70-3531-11ef-b649-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,364 - INFO - Response status: 200
+2024-06-28 15:00:47,785 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b2-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'c3ef4c37-6884-48cb-85ee-570dfd86efc5'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '19dc1a70-3531-11ef-b649-a029196791c6'
+    'x-ms-request-id': '515cf012-20b4-4235-ad33-1ef83123ce83'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:46 GMT'
     'Content-Length': '313'
-2024-06-11 00:32:39,365 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
+2024-06-28 15:00:47,787 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b3-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '1a0342b1-3531-11ef-bb76-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,385 - INFO - Response status: 200
+2024-06-28 15:00:48,046 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b3-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '3dde6af1-a350-469c-be1e-74b83e8d4319'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '1a0342b1-3531-11ef-bb76-a029196791c6'
+    'x-ms-request-id': 'c1c58186-67e6-4780-8350-48ec6a6d0d9d'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:47 GMT'
     'Content-Length': '276'
-2024-06-11 00:32:39,386 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
+2024-06-28 15:00:48,048 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b4-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '1a2b18ed-3531-11ef-9364-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,408 - INFO - Response status: 200
+2024-06-28 15:00:48,310 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b4-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'd7f44d6f-46bb-4324-96b6-1f5bf2828c20'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '1a2b18ed-3531-11ef-9364-a029196791c6'
+    'x-ms-request-id': '325cda6a-a1ff-44bb-b4c4-04b99686809a'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:47 GMT'
     'Content-Length': '272'
-2024-06-11 00:32:39,409 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-enbedding-deployment/?api-version=REDACTED'
+2024-06-28 15:00:48,311 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-enbedding-deployment/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b5-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '1a535d2b-3531-11ef-babc-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,429 - INFO - Response status: 200
+2024-06-28 15:00:48,571 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b5-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '45a0d290-38e7-4296-afc3-ef8c45a3b0dd'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '1a535d2b-3531-11ef-babc-a029196791c6'
+    'x-ms-request-id': 'e9597a05-026d-4c9e-86c6-9ac2ba25daac'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:47 GMT'
     'Content-Length': '288'
-2024-06-11 00:32:39,430 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-embedding-model-name/?api-version=REDACTED'
+2024-06-28 15:00:48,573 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-embedding-model-name/?api-version=REDACTED'
 Request method: 'GET'
 Request headers:
     'Accept': 'application/json'
-    'x-ms-client-request-id': '1b4508b6-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
+    'x-ms-client-request-id': '1a7b3ccb-3531-11ef-9f74-a029196791c6'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.10.8 (Windows-10-10.0.19045-SP0)'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2024-06-11 00:32:39,451 - INFO - Response status: 200
+2024-06-28 15:00:48,835 - INFO - Response status: 200
 Response headers:
     'Cache-Control': 'no-cache'
     'Pragma': 'no-cache'
     'Content-Type': 'application/json; charset=utf-8'
     'Expires': '-1'
     'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '1b4508b6-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '8b4ddecd-86ec-4d1b-b7a7-6cdaf717445e'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
+    'x-ms-client-request-id': '1a7b3ccb-3531-11ef-9f74-a029196791c6'
+    'x-ms-request-id': '44deea84-46ad-4bc8-9925-4a91a96035a9'
+    'x-ms-keyvault-service-version': '1.9.1551.1'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=101.0.63.174;act_addr_fam=InterNetwork;'
     'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
     'X-Content-Type-Options': 'REDACTED'
     'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:32:38 GMT'
+    'Date': 'Fri, 28 Jun 2024 09:30:47 GMT'
     'Content-Length': '301'
-2024-06-11 00:32:39,452 - INFO - Generating final result for query: Client name: Osa Esene
-DOB: 8/20/1980
-esene.osadonor@gmail.com
-
-Injury/loss: retaliation & potential wrongful termination
-DOI:  5/09/2024
-Location of incident: Portland, OR 97214
-Employer/Company: Central Catholic High School
-
-
-5/17/2024
-
-Liability: Mr. Esene is a student-teacher
-
-I need help with a work issue This school year I was a student-teacher and I was released out of my contract immediately after I finish the school year and was reported to HR for being in a classroom with three female students. The students and I were in the room for no longer than five minutes and a teacher walk by and felt like it wasn’t a good look. They gave me paperwork I sign by 06/21 or they really will terminate me.
-Nothing happened in the classroom and nothing was going to happen
-2024-06-11 00:32:39,773 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/embedding/embeddings?api-version=2023-05-15 "HTTP/1.1 200 OK"
-2024-06-11 00:32:42,784 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:32:43,772 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:32:43,773 - INFO - Final result generated: {"PrimaryCaseType": "Employment Law", "SecondaryCaseType": "Other", "CaseRating": "Tier 4", "Case State": "OR Oregon", "Is Workers Compensation (Yes/No)?": "No", "Confidence(%)": "90%", "Explanation": "The client is seeking legal assistance for retaliation and potential wrongful termination by Central Catholic High School. As per description, the incident happened in Portland, OR, so the case state would be 'OR Oregon'. The primary case type is 'Employment Law' as the client is a student-teacher and the secondary case type is 'Other' as there is no information about the incident that can be categorized into any other secondary case type. The case rating is 'Tier 4' as there is no mention of any surgery, and the injury is related to retaliation and potential wrongful termination. The incident is not related to the workplace of the client, so the answer to 'Is Workers Compensation (Yes/No)?' is 'No'. The confidence level is 90% as the description is clear and concise.\n\nThe case type is Employment Law, which falls under Labour Law category. The case rating is Tier 4, and the handling firm rule for Tier 1-4 and Labour Law is Morgan and Morgan. Therefore, Morgan and Morgan is the recommended handling firm for this case.", "Handling Firm": "Morgan and Morgan", "CaseId": "885bd207-da69-420d-b457-6159246865f2"}
-2024-06-11 00:32:43,793 - INFO - Processed result: {"PrimaryCaseType": "Employment Law", "SecondaryCaseType": "Other", "CaseRating": "Tier 4", "Case State": "OR Oregon", "Is Workers Compensation (Yes/No)?": "No", "Confidence(%)": "90%", "Explanation": "The client is seeking legal assistance for retaliation and potential wrongful termination by Central Catholic High School. As per description, the incident happened in Portland, OR, so the case state would be 'OR Oregon'. The primary case type is 'Employment Law' as the client is a student-teacher and the secondary case type is 'Other' as there is no information about the incident that can be categorized into any other secondary case type. The case rating is 'Tier 4' as there is no mention of any surgery, and the injury is related to retaliation and potential wrongful termination. The incident is not related to the workplace of the client, so the answer to 'Is Workers Compensation (Yes/No)?' is 'No'. The confidence level is 90% as the description is clear and concise.\n\nThe case type is Employment Law, which falls under Labour Law category. The case rating is Tier 4, and the handling firm rule for Tier 1-4 and Labour Law is Morgan and Morgan. Therefore, Morgan and Morgan is the recommended handling firm for this case.", "Handling Firm": "Morgan and Morgan", "CaseId": "885bd207-da69-420d-b457-6159246865f2"}
-2024-06-11 00:33:36,254 - INFO - User login successful for username: admin
-2024-06-11 00:33:36,255 - INFO - Access token generated for username: admin
-2024-06-11 00:33:36,435 - INFO - Received message: Client name: Kenneth Jamison
-DOB: 7/10/1979
-jamisonk710@yahoo.com 
-
-Injury/loss: laceration on forehead
-Surgery: No
-DOI: 4/12/2024
-Location of incident: Jackson, NJ 08527
-Employer/Company: Meadowbrook Industries
-
-Liability: Mr. Jamison got into an accident on the garden state parkway 
-while on clock. He got a head injury & laceration on the forehead, he notified his employer following the accident and file a worker's compensation; however until now he has not provided any update of the status of the claim. He said his boss put him back to work and refused to accommodate him with light duty then he was taken off schedule and until now he is waiting for an update and he is getting a run around from his boss. He is looking for legal assistance to review his workers' comp because he needs further medical treatment. 
-
-Damage: Mr. Jamison sustained a laceration in the forehead and he got stitches and his leg also got sprained. He initially received medical treatment at the emergency room then follow up with the specialist but he still need medical treatment to check that there is no brain damage. Additional damages he lost income since worker's comp has not yet approved and
-2024-06-11 00:33:36,770 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:33:36,770 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3d9bb4ac-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:37,114 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3d9bb4ac-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '43a56c82-080d-4d9e-b687-b9e782ca2eba'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:36 GMT'
-    'Content-Length': '292'
-2024-06-11 00:33:37,114 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3d9bb4ad-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:37,135 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3d9bb4ad-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '23d1b324-b0df-4eac-a07a-fd3ed8e4a7f8'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:36 GMT'
-    'Content-Length': '291'
-2024-06-11 00:33:37,135 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3d9bb4ae-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:37,157 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3d9bb4ae-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '8a3c2d96-235e-429a-bce8-60aba560282c'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:36 GMT'
-    'Content-Length': '313'
-2024-06-11 00:33:37,158 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3d9bb4af-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:37,178 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3d9bb4af-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'b5d05a84-a3b1-42ec-a84f-d089cee223c3'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:36 GMT'
-    'Content-Length': '276'
-2024-06-11 00:33:37,179 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3d9bb4b0-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:37,199 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3d9bb4b0-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '9705a301-71e1-4d5c-be82-737b6971107a'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:36 GMT'
-    'Content-Length': '272'
-2024-06-11 00:33:38,124 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com/openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:33:38,125 - INFO - This appears to be a legal case.
-2024-06-11 00:33:38,125 - INFO - Initializing caseClassifier...
-2024-06-11 00:33:38,454 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:33:38,455 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-db-path/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94ec-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,565 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94ec-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '8c46494c-3b4f-485c-9a6f-9a14d5c5bcac'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '279'
-2024-06-11 00:33:38,566 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-azure-api-type/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94ed-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,588 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94ed-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '95b46c97-ccab-44ae-b2ea-d28403da04e5'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '267'
-2024-06-11 00:33:38,588 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94ee-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,615 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94ee-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'bca849f2-558c-4ba8-bb00-7692dd2767ac'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '292'
-2024-06-11 00:33:38,616 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94ef-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,639 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94ef-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5560feb9-17e3-4b08-81aa-2d2443ab4134'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '291'
-2024-06-11 00:33:38,640 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94f0-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,657 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94f0-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5784f13c-4950-437d-879b-9dab72e58f9f'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '313'
-2024-06-11 00:33:38,658 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94f1-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,678 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94f1-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5725fae1-7fc7-41fd-8431-697073e8b2ae'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '276'
-2024-06-11 00:33:38,679 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94f2-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,696 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94f2-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5f223d5b-4727-4f73-8007-8dd6375af3a7'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '272'
-2024-06-11 00:33:38,697 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-enbedding-deployment/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94f3-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,715 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94f3-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '01f25f66-6908-4913-82d7-167b9c2e1c7c'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '288'
-2024-06-11 00:33:38,716 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-embedding-model-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': '3e9d94f4-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:33:38,734 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': '3e9d94f4-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'a770f156-26b8-423f-932a-c3aa49618b65'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:33:38 GMT'
-    'Content-Length': '301'
-2024-06-11 00:33:38,735 - INFO - Generating final result for query: Client name: Kenneth Jamison
-DOB: 7/10/1979
-jamisonk710@yahoo.com 
-
-Injury/loss: laceration on forehead
-Surgery: No
-DOI: 4/12/2024
-Location of incident: Jackson, NJ 08527
-Employer/Company: Meadowbrook Industries
-
-Liability: Mr. Jamison got into an accident on the garden state parkway 
-while on clock. He got a head injury & laceration on the forehead, he notified his employer following the accident and file a worker's compensation; however until now he has not provided any update of the status of the claim. He said his boss put him back to work and refused to accommodate him with light duty then he was taken off schedule and until now he is waiting for an update and he is getting a run around from his boss. He is looking for legal assistance to review his workers' comp because he needs further medical treatment. 
-
-Damage: Mr. Jamison sustained a laceration in the forehead and he got stitches and his leg also got sprained. He initially received medical treatment at the emergency room then follow up with the specialist but he still need medical treatment to check that there is no brain damage. Additional damages he lost income since worker's comp has not yet approved and
-2024-06-11 00:33:39,011 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/embedding/embeddings?api-version=2023-05-15 "HTTP/1.1 200 OK"
-2024-06-11 00:33:41,579 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:33:42,491 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:33:42,492 - INFO - Final result generated: {"PrimaryCaseType": "Workers Compensation", "SecondaryCaseType": "Employment Law", "CaseRating": "Tier 2", "Case State": "NJ New Jersey", "Is Workers Compensation (Yes/No)?": "Yes", "Confidence(%)": "90%", "Explanation": "The description clearly indicates that the incident happened while the client was on the job and he filed for worker's compensation. The client sustained a laceration in the forehead and sprained his leg, which falls under Tier 2 for Workers Compensation and General Injury. The case state is NJ as mentioned in the location of the incident in the description. The client is seeking legal assistance for his workers' compensation claim, which indicates that the case is still ongoing. There is no mention of any other case type in the description. \n\nThe case rating falls within Tier 1-5 and the case type is 'Workers Compensation and Employment Law', which are both covered under 'Any' case type. Therefore, the recommended handling firm is 'REFER TO NJ SECTION' as per the Handling Firm Rules.", "Handling Firm": "REFER TO NJ SECTION", "CaseId": "0a11fe5a-71cb-4fdb-88f4-18d639f89dc5"}
-2024-06-11 00:33:42,497 - INFO - Processed result: {"PrimaryCaseType": "Workers Compensation", "SecondaryCaseType": "Employment Law", "CaseRating": "Tier 2", "Case State": "NJ New Jersey", "Is Workers Compensation (Yes/No)?": "Yes", "Confidence(%)": "90%", "Explanation": "The description clearly indicates that the incident happened while the client was on the job and he filed for worker's compensation. The client sustained a laceration in the forehead and sprained his leg, which falls under Tier 2 for Workers Compensation and General Injury. The case state is NJ as mentioned in the location of the incident in the description. The client is seeking legal assistance for his workers' compensation claim, which indicates that the case is still ongoing. There is no mention of any other case type in the description. \n\nThe case rating falls within Tier 1-5 and the case type is 'Workers Compensation and Employment Law', which are both covered under 'Any' case type. Therefore, the recommended handling firm is 'REFER TO NJ SECTION' as per the Handling Firm Rules.", "Handling Firm": "REFER TO NJ SECTION", "CaseId": "0a11fe5a-71cb-4fdb-88f4-18d639f89dc5"}
-2024-06-11 00:36:31,506 - INFO - User login successful for username: admin
-2024-06-11 00:36:31,506 - INFO - Access token generated for username: admin
-2024-06-11 00:36:31,694 - INFO - Received message: Client name: Kenneth Jamison
-DOB: 7/10/1979
-jamisonk710@yahoo.com 
-
-Injury/loss: laceration on forehead
-Surgery: No
-DOI: 4/12/2024
-Location of incident: Jackson, NJ 08527
-Employer/Company: Meadowbrook Industries
-
-Liability: Mr. Jamison got into an accident on the Garden State Parkway while on the clock. He sustained a laceration on his forehead and promptly notified his employer, filing a workers' compensation claim. However, he has not received any updates on the status of his claim. His boss put him back to work without accommodating him with light duty and then took him off the schedule. Mr. Jamison is still waiting for an update and feels he is getting the runaround from his boss. He is seeking legal assistance to review his workers' compensation case because he needs further medical treatment.
-
-Damage: Mr. Jamison sustained a laceration on his forehead, for which he received stitches, and he also sprained his leg. He initially received medical treatment at the emergency room and followed up with a specialist, but he still needs further medical treatment to ensure there is no brain damage. Additionally, he has lost income since he has been out of work while waiting for workers' compensation approval. Mr. Jamison is seeking legal representation to review his workers' compensation coverage and ensure he receives the necessary medical treatment and compensation for his lost income.
-2024-06-11 00:36:32,026 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:36:32,026 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a61223fe-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:32,162 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a61223fe-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'b712ca0a-e245-4386-a33e-a5c72bde17ad'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:31 GMT'
-    'Content-Length': '292'
-2024-06-11 00:36:32,162 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a61223ff-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:32,186 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a61223ff-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'b4a35451-6dd7-4e14-92ab-251a2a9eb59e'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:31 GMT'
-    'Content-Length': '291'
-2024-06-11 00:36:32,187 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a6122400-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:32,208 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a6122400-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '665aa50b-7092-41d9-8513-51560f5f701a'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:31 GMT'
-    'Content-Length': '313'
-2024-06-11 00:36:32,208 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a6122401-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:32,228 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a6122401-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'cf98a9c4-563c-4297-90ad-73e71b729ccb'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:31 GMT'
-    'Content-Length': '276'
-2024-06-11 00:36:32,229 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a6122402-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:32,265 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a6122402-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '6dfcc5d5-f951-48f5-8193-bb57d77e7197'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:31 GMT'
-    'Content-Length': '272'
-2024-06-11 00:36:33,509 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com/openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:36:33,510 - INFO - This appears to be a legal case.
-2024-06-11 00:36:33,510 - INFO - Initializing caseClassifier...
-2024-06-11 00:36:33,844 - INFO - AzureCliCredential.get_token succeeded
-2024-06-11 00:36:33,844 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-db-path/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c30-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,023 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c30-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': 'fb7a5816-17f8-4d2b-9c0d-97664c934d80'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '279'
-2024-06-11 00:36:34,024 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-azure-api-type/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c31-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,046 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c31-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '3d8aeabb-ed11-4eb8-9044-d70454ff6988'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '267'
-2024-06-11 00:36:34,047 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-open-api-key/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c32-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,067 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c32-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '04f93972-b118-4862-9028-3a958fb8e1fa'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '292'
-2024-06-11 00:36:34,067 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-version/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c33-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,092 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c33-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5d60ae13-5426-4a87-adc5-26f40fa84e2d'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '291'
-2024-06-11 00:36:34,092 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-endpoint/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c34-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,113 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c34-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '6f6e703e-10ee-4f82-abd1-914d1a23a4d5'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '313'
-2024-06-11 00:36:34,114 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-deployment-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c35-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,134 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c35-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '5e51b720-ae3a-41dd-a4ae-911d0f75ac12'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '276'
-2024-06-11 00:36:34,135 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-model/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c36-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,153 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c36-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '98b9e503-206a-4189-875e-ddf08ec4da3c'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '272'
-2024-06-11 00:36:34,154 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-enbedding-deployment/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c37-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,173 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c37-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '46d15796-4ace-499a-8cb6-8e6b861dd398'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '288'
-2024-06-11 00:36:34,173 - INFO - Request URL: 'https://caseratekeyvault.vault.azure.net/secrets/pl-openai-ada-embedding-model-name/?api-version=REDACTED'
-Request method: 'GET'
-Request headers:
-    'Accept': 'application/json'
-    'x-ms-client-request-id': 'a7272c38-278a-11ef-82c4-f90645f5a21d'
-    'User-Agent': 'azsdk-python-keyvault-secrets/4.8.0 Python/3.11.9 (Linux-6.5.0-1018-azure-x86_64-with-glibc2.35)'
-    'Authorization': 'REDACTED'
-No body was attached to the request
-2024-06-11 00:36:34,195 - INFO - Response status: 200
-Response headers:
-    'Cache-Control': 'no-cache'
-    'Pragma': 'no-cache'
-    'Content-Type': 'application/json; charset=utf-8'
-    'Expires': '-1'
-    'x-ms-keyvault-region': 'eastus'
-    'x-ms-client-request-id': 'a7272c38-278a-11ef-82c4-f90645f5a21d'
-    'x-ms-request-id': '78d8b13b-20e4-4dac-8458-52e3ec5412ce'
-    'x-ms-keyvault-service-version': '1.9.1504.1'
-    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=20.51.219.224;act_addr_fam=InterNetwork;'
-    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
-    'X-Content-Type-Options': 'REDACTED'
-    'Strict-Transport-Security': 'REDACTED'
-    'Date': 'Tue, 11 Jun 2024 00:36:33 GMT'
-    'Content-Length': '301'
-2024-06-11 00:36:34,197 - INFO - Generating final result for query: Client name: Kenneth Jamison
-DOB: 7/10/1979
-jamisonk710@yahoo.com 
-
-Injury/loss: laceration on forehead
-Surgery: No
-DOI: 4/12/2024
-Location of incident: Jackson, NJ 08527
-Employer/Company: Meadowbrook Industries
-
-Liability: Mr. Jamison got into an accident on the Garden State Parkway while on the clock. He sustained a laceration on his forehead and promptly notified his employer, filing a workers' compensation claim. However, he has not received any updates on the status of his claim. His boss put him back to work without accommodating him with light duty and then took him off the schedule. Mr. Jamison is still waiting for an update and feels he is getting the runaround from his boss. He is seeking legal assistance to review his workers' compensation case because he needs further medical treatment.
-
-Damage: Mr. Jamison sustained a laceration on his forehead, for which he received stitches, and he also sprained his leg. He initially received medical treatment at the emergency room and followed up with a specialist, but he still needs further medical treatment to ensure there is no brain damage. Additionally, he has lost income since he has been out of work while waiting for workers' compensation approval. Mr. Jamison is seeking legal representation to review his workers' compensation coverage and ensure he receives the necessary medical treatment and compensation for his lost income.
-2024-06-11 00:36:34,575 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/embedding/embeddings?api-version=2023-05-15 "HTTP/1.1 200 OK"
-2024-06-11 00:36:37,230 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:36:38,144 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
-2024-06-11 00:36:38,145 - INFO - Final result generated: {"PrimaryCaseType": "Workers Compensation", "SecondaryCaseType": "Automobile Accident", "CaseRating": "Tier 3", "Case State": "NJ New Jersey", "Is Workers Compensation (Yes/No)?": "Yes", "Confidence(%)": "90%", "Explanation": "The client was injured while on the clock and filed a workers' compensation claim. He sustained a laceration on his forehead and sprained his leg. He needs further medical treatment and compensation for his lost income. The incident occurred on the Garden State Parkway in NJ, and the case state is NJ. The primary and secondary case types are Workers Compensation and Automobile Accident respectively, as the client was injured while on the clock and got into an accident on the Garden State Parkway. The case rating is Tier 3, as the client has a concussion and needs further medical treatment.\n\nThe case rating falls within Tier 1-5 and the case type is 'Workers Compensation and Automobile Accident', which both fall under 'Any' case type. Therefore, the recommended handling firm is 'REFER TO NJ SECTION' as per the Handling Firm Rules.", "Handling Firm": "REFER TO NJ SECTION", "CaseId": "8ce9893e-93dc-462b-a4e3-9ec4bfef15e7"}
-2024-06-11 00:36:38,149 - INFO - Processed result: {"PrimaryCaseType": "Workers Compensation", "SecondaryCaseType": "Automobile Accident", "CaseRating": "Tier 3", "Case State": "NJ New Jersey", "Is Workers Compensation (Yes/No)?": "Yes", "Confidence(%)": "90%", "Explanation": "The client was injured while on the clock and filed a workers' compensation claim. He sustained a laceration on his forehead and sprained his leg. He needs further medical treatment and compensation for his lost income. The incident occurred on the Garden State Parkway in NJ, and the case state is NJ. The primary and secondary case types are Workers Compensation and Automobile Accident respectively, as the client was injured while on the clock and got into an accident on the Garden State Parkway. The case rating is Tier 3, as the client has a concussion and needs further medical treatment.\n\nThe case rating falls within Tier 1-5 and the case type is 'Workers Compensation and Automobile Accident', which both fall under 'Any' case type. Therefore, the recommended handling firm is 'REFER TO NJ SECTION' as per the Handling Firm Rules.", "Handling Firm": "REFER TO NJ SECTION", "CaseId": "8ce9893e-93dc-462b-a4e3-9ec4bfef15e7"}
+2024-06-28 15:00:48,837 - INFO - Generating final result for query: "The Supervisor called EMS to transport Mr. Garcia to Stormville Hospital after he slipped and fell backward causing a beam to penetrate his rectum, intestine, colon and bladder on a construction site while working for Rich Construction. Mr. Garcia has had 2 emergency surgeries with another pending for October 12, 2020. His back is injured and he is in constant pain. Mr. Garcia would like assistance with his workers compensation claim. He feels he is not getting proper medical attention as the workers compensation doctor is pushing him to get back to work even before the 3rd surgery is completed. He is not able to walk, sit or stand."
+2024-06-28 15:00:49,346 - INFO - Loading faiss with AVX2 support.
+2024-06-28 15:00:49,346 - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2024-06-28 15:00:49,346 - INFO - Loading faiss.
+2024-06-28 15:00:49,698 - INFO - Successfully loaded faiss.
+2024-06-28 15:00:53,406 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/embedding/embeddings?api-version=2023-05-15 "HTTP/1.1 200 OK"
+2024-06-28 15:00:56,181 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+2024-06-28 15:00:58,242 - INFO - HTTP Request: POST https://pl-ver-openai.openai.azure.com//openai/deployments/gpt-35/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+2024-06-28 15:00:58,245 - INFO - Final result generated: {"PrimaryCaseType": "Workers Compensation", "SecondaryCaseType": "Workers Compensation", "CaseRating": "Tier 5", "Case State": "NY New York", "Is Workers Compensation (Yes/No)?": "Yes", "Confidence(%)": "100%", "Explanation": "The client, Mr. Garcia, was injured on a construction site while working for Rich Construction. He suffered severe injuries to his rectum, intestine, colon, and bladder, which required two emergency surgeries, with another pending. He is in constant pain and unable to walk, sit or stand. He is seeking assistance with his workers compensation claim and feels he is not getting proper medical attention. The case involves a workplace injury, which falls under the Workers Compensation category. The state mentioned in the description is NY, which stands for New York.\n\nThe case rating is Tier 5 and case types are Workers Compensation and Workers Compensation, which are not specified in any specific rule. The only applicable rule is a general rule that applies to any case type with a Tier 1-5 rating, which recommends referring to the NY section handling firm.", "Handling Firm": "REFER TO NY SECTION", "CaseId": "5b07de6e-a79a-47d2-abb5-8a6e1d78ac06"}
+2024-06-28 15:00:58,256 - INFO - Please enter incorrect address here or type 'q' to quit
